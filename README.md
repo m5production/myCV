@@ -3,8 +3,6 @@ https://m5production.github.io/myCV/
 
 # Dmitry Mikheev
 
-![My photo](/assets/images/my-avatar.jpg)
-
 ## Contact info
    Phone: +7(908)582-82-96\
    E-mail: dimikh@mail.ru\
