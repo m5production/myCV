@@ -19,8 +19,10 @@ https://m5production.github.io/myCV/
 - HTML5, CSS3
 - C# basics
 - C++ basics
-- JavaScript basics
+- JavaScript
+- TypeScript
 - Git
+- Bootstrap
 
 ## Code example
 ### *Stop gninnipS My sdroW!* KATA from CODEWARS
