@@ -9,155 +9,154 @@ $h2-font-size: 25px;
 $common-text-font-size: 18px;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    font-family: 'Poppins', 'Roboto', sans-serif;
-    font-size: $common-text-font-size;
-    line-height: 1.4;
-    text-align: justify;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-size: $common-text-font-size;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
 
-    &:hover {
-        color: orange;
-    }
+  &:hover {
+    color: orange;
+  }
 }
 
 p {
-    margin: 0;
-    margin-bottom: 0.5em;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-    font-size: $h2-font-size;
-    margin-bottom: 0.5em;
+  font-size: $h2-font-size;
+  margin-bottom: 0.5em;
 }
 
 .main-body {
-    display: flex;
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: white;
-    border: 2px solid rgb(164, 164, 164);
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid rgb(164, 164, 164);
 }
 
 .text-container-left {
-    padding: calc($vertical-page-padding + 30px) $inner-padding calc($vertical-page-padding - 40px) $horizontal-page-padding;
-    background-color: blue;
-    text-align: left;
+  padding: calc($vertical-page-padding + 30px) $inner-padding calc($vertical-page-padding - 40px) $horizontal-page-padding;
+  background-color: blue;
+  text-align: left;
 
-    * {
-        color: white;
-    }
+  * {
+    color: white;
+  }
 
-    h2 {
-        color: yellow;
-    }
+  h2 {
+    color: yellow;
+  }
 }
 
 .my-avatar {
-    max-width: 90%;
-    display: block;
-    margin: 0 auto;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
 }
 
 .text-container-right {
-    padding: $vertical-page-padding $horizontal-page-padding;
-    color: #424242;
+  padding: $vertical-page-padding $horizontal-page-padding;
+  color: #424242;
 
-    a {
-        color: rgb(6, 0, 183);
+  a {
+    color: rgb(6, 0, 183);
 
-        &:hover {
-            color: orange;
-        }
+    &:hover {
+      color: orange;
     }
+  }
 }
 
 .main-heading {
-    margin: 0;
-    margin-bottom: 26px;
-    line-height: 1.2em;
-    font-size: $main-heading-font-size;
-    font-weight: normal;
-    color: #242433;
+  margin: 0;
+  margin-bottom: 26px;
+  line-height: 1.2em;
+  font-size: $main-heading-font-size;
+  font-weight: normal;
+  color: #242433;
 }
 
 .subheading {
-    margin: 0;
-    margin-bottom: 70px;
-    font-size: $subheading-font-size;
-    text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 70px;
+  font-size: $subheading-font-size;
+  text-transform: uppercase;
 }
 
 .education {
-    text-align: left;
-    letter-spacing: 1.2;
+  text-align: left;
+  letter-spacing: 1.2;
 }
 
 .experience {
-    text-align: left;
+  text-align: left;
 }
 
 @media print {
-    :root {
-        font-size: 14px;
-    }
+  :root {
+    font-size: 14px;
+  }
 
-    .text-container-left {
-        padding: 30px 20px 20px 30px;
-    }
+  .text-container-left {
+    padding: 30px 20px 20px 30px;
+  }
 
-    .text-container-right {
-        padding: 30px 20px 20px 20px;
-
-        h2 {
-            font-weight: normal;
-        }
-    }
-
-    .main-heading {
-        font-size: 25px;
-    }
-
-    .subheading {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    .h2 {
-        font-size: 16px;
-    }
-
+  .text-container-right {
+    padding: 30px 20px 20px 20px;
 
     h2 {
-        margin-top: 0.5em;
-        margin-bottom: 0;
+      font-weight: normal;
     }
+  }
 
-    ul {
-        margin-bottom: 0;
-        margin-top: 0.5em;
-    }
+  .main-heading {
+    font-size: 25px;
+  }
 
-    .achievements-list>li:last-of-type {
-        display: none;
-    }
+  .subheading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 
-    .mil-service {
-        display: none;
-    }
+  .h2 {
+    font-size: 16px;
+  }
 
-    .hobbies > ul {
-        justify-content: space-between;
-        display: flex;
-        list-style: none;
-    }
+
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+  }
+
+  .achievements-list>li:last-of-type {
+    display: none;
+  }
+
+  .mil-service {
+    display: none;
+  }
+
+  .hobbies>ul {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+  }
 }
-
