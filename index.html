@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,9 +11,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Dmitry Mikheev - Junior Frontend-developer</title>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -22,130 +22,169 @@
 
 <body>
   <div class="container">
-    <div class="">
-      <img class="" src="assets/images/my-avatar.png" alt="Михеев Дмитрий">
-      <div class="">
-        <h2>Контакты</h2>
-        <ul class="">
-          <li class=""><a href="tel:+79085828296">+7(908)582-82-96</a></li>
-          <li class=""><a href="mailto:dimikh@mail.ru">dimikh@mail.ru</a></li>
-          <li class=""><a href="https://t.me/m5production86">Telegram</a></li>
-          <li class=""><a href="https://vk.com/dimikh">VK</a></li>
-          <li class=""><a href="https://github.com/m5production">GitHub</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Курсы</h2>
-        <ul>
-          <li><a href="https://rs.school/js-stage0/">JS/FE Pre-School 2022Q4 (в процессе)</a></li>
-          <li><a href="https://stepik.org/course/363/promo">Введение в программирование (C++)</a><a
-              href="assets/certificates/cpp-certificate.pdf">(Сертификат)</a></li>
-          <li><a href="https://ulearn.me/">Основы программирования на примере языка C#</a></li>
-          <li><a href="https://m5production.github.io/MarathonHTMLAcademy5/">Учебный марафон по развитию
-              навыков
-              HTML5 и CSS3</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Образование</h2>
-        <ul>
-          <li>2004-2010 <a href="https://www.csu.ru/">Челябинский Государственный Университет</a><br>
-            Факультет лингвистики и перевода<br>
-            Перевод и переводоведение</li>
-          <li>1993-2004 <a href="https://school127-snz.educhel.ru/">Гимназия №127</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Достижения</h2>
-        <ul class="">
-          <li>Самостоятельно в режиме самообразования разобрался в системе автоматизированного перевода
-            (CAT-tools, MemoQ)</li>
-          <li>Был неоднократно отмечен за хорошую устную и письменную работу в том числе на семинарах и
-            конференциях</li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Языки</h2>
-        <ul>
-          <li>Английский - C1</li>
-          <li>Русский - грамотный</li>
-          <li>Французский - A2</li>
-        </ul>
-      </div>
-    </div>
+    <div class="row">
+      <aside class="col-md-4 bg-primary pt-3 text-light">
+        <img class="d-block ms-auto me-auto img-fluid mb-3" src="assets/images/my-avatar.png" alt="Михеев Дмитрий">
+        <div class="text-center d-md-none">
+          <h1 class="h1">Дмитрий Михеев</h1>
+          <p class="text-uppercase">Frontend-developer</p>
+        </div>
+        <section>
+          <h2>Контакты</h2>
+          <ul class="d-flex d-md-block justify-content-between flex-wrap gap-2 contacts-list">
+            <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+79085828296">+7(908)582-82-96</a>
+            </li>
+            <li class="contacts-list__item"><a class="contacts-list__link"
+                href="mailto:dimikh@mail.ru">dimikh@mail.ru</a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link"
+                href="https://t.me/m5production86">Telegram</a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link" href="https://vk.com/dimikh">VK</a></li>
+            <li class="contacts-list__item"><a class="contacts-list__link"
+                href="https://github.com/m5production">GitHub</a></li>
+          </ul>
+        </section>
+        <div class="accordion">
+          <section class="accordion-item bg-primary">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseCourses" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseCourses">Курсы</button>
+            </div>
+            <div id="panelsStayOpen-collapseCourses" class="accordion-collapse collapse">
+              <ul class="accordion-body">
+                <li><a href="https://rs.school/js-stage0/">JS/FE Pre-School 2022Q4 (в процессе)</a></li>
+                <li><a href="https://stepik.org/course/363/promo">Введение в программирование (C++)</a><a
+                    href="assets/certificates/cpp-certificate.pdf">(Сертификат)</a></li>
+                <li><a href="https://ulearn.me/">Основы программирования на примере языка C#</a></li>
+                <li><a href="https://m5production.github.io/MarathonHTMLAcademy5/">Учебный марафон по развитию
+                    навыков
+                    HTML5 и CSS3</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="accordion-item bg-primary">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseEducation" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseEducation">Образование</button>
+            </div>
+            <div id="panelsStayOpen-collapseEducation" class="accordion-collapse collapse">
+              <ul class="accordion-body">
+                <li>2004-2010 <a href="https://www.csu.ru/">Челябинский Государственный Университет</a><br>
+                  Факультет лингвистики и перевода<br>
+                  Перевод и переводоведение</li>
+                <li>1993-2004 <a href="https://school127-snz.educhel.ru/">Гимназия №127</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="accordion-item bg-primary">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseAchievements" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseAchievements">Достижения</button>
+            </div>
+            <div id="panelsStayOpen-collapseAchievements" class="accordion-collapse collapse">
+              <ul class="accordion-body">
+                <li>Самостоятельно в режиме самообразования разобрался в системе автоматизированного перевода
+                  (CAT-tools, MemoQ)</li>
+                <li>Был неоднократно отмечен за хорошую устную и письменную работу в том числе на семинарах и
+                  конференциях</li>
+              </ul>
+            </div>
+          </section>
+          <section class="accordion-item bg-primary">
+            <div class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseLanguages" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseLanguages">Языки</button>
+            </div>
+            <div id="panelsStayOpen-collapseLanguages" class="accordion-collapse collapse">
+              <ul class="accordion-body">
+                <li>Английский - C1</li>
+                <li>Русский - грамотный</li>
+                <li>Французский - A2</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </aside>
 
-    <div class="">
-      <h1 class="">Дмитрий Михеев</h1>
-      <p class="">Frontend-developer</p>
-      <div class="">
-        <h2>Навыки</h2>
-        <ul>
-          <li>HTML</li>
-          <li>SCSS/SASS</li>
-          <li>JS</li>
-          <li>Git</li>
-          <li>Node.js</li>
-          <li>Figma</li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Проекты</h2>
-        <ul>
-          <li><a href="https://m5production.github.io/shelter/shelter/src/pages/1_index.html">Shelter</a>(проект,
-            сделанный в рамках курса RSSchool JS/FE Stage1 2023Q1)
-          </li>
-          <li><a href="https://github.com/m5production/plants">Plants</a>(проект,
-            сделанный в рамках курса RSSchool JS/FE Stage0 2022Q4)
-          </li>
-          <li><a href="https://github.com/m5production/Online-zoo">Online-zoo</a>(проект,
-            сделанный в рамках курса RSSchool JS/FE Stage1 2022Q3: страницы Main и Donate)
-          </li>
-          <li><a href="https://m5production.github.io/rsschool-cv/">Резюме - задание выполненное в рамках
-              курса RSSchool JS/FE Stage0 2022Q4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Примеры кода</h2>
-        <p>Примеры кода можно найти на сайте <a
-            href="https://www.codewars.com/users/rsschool_d88b7725ff43593a/completed_solutions">Codewars</a>
-        </p>
-      </div>
-      <div class="">
-        <h2>О себе</h2>
-        <p>Стремлюсь стать программистом, чтобы сделать жизнь людей безопаснее,
-          комфортнее, радостнее. Хочу работать в дружном коллективе, в окружении людей, любящих то, чем они
-          занимаются.
-        <p>Люблю решать новые задачи, осваивать новые технологии и навыки. Так, в разные периоды своей жизни я
-          занимался Arduino, знакомился с C++, C#.</p>
-        <p>В настоящий момент я делаю учебные проекты на JavaScript, продолжая его изучать, также я учу сейчас
-          TypeScript и React, равно как
-          и смежные технологии, чтобы как можно скорее попробовать себя в коммерческой разработке.</p>
-      </div>
-      <div class="">
-        <h2>Опыт работы</h2>
-        <ul>
-          <li>2017г.- 2022г. <p>Начальник группы перевода ФГУП&nbsp;"РФЯЦ-ВНИИТФ"</p>
-          </li>
-          <li>2012г.- 2017г. <p>Переводчик ФГУП&nbsp;"РФЯЦ-ВНИИТФ"</p>
-          </li>
-          <li>2011г.- 2012г. <p>Промышленный альпинист ООО"Макфа"</p>
-          </li>
-        </ul>
-      </div>
-      <div class="">
-        <h2>Служба в армии</h2>
-        <p>2010-2011гг. - БПК "Керч"</p>
-        <p>Радиотелеграфист ЗАС</p>
-      </div>
-      <div class="">
-        <h2>Увлечения</h2>
-        <ul>
-          <li>Бег</li>
-          <li>Игра на гитаре</li>
-          <li>Скалолазание</li>
-          <li>Походы</li>
-        </ul>
+      <div class="col-md-8 pt-3">
+        <div class="d-none d-md-block ">
+          <div class="h1">Дмитрий Михеев</div>
+          <p class="">Frontend-developer</p>
+        </div>
+        <section class="">
+          <h2>Навыки</h2>
+          <ul>
+            <li>HTML</li>
+            <li>SCSS/SASS</li>
+            <li>JS</li>
+            <li>Git</li>
+            <li>Node.js</li>
+            <li>Figma</li>
+            <li>Bootstrap</li>
+          </ul>
+        </section>
+        <section class="">
+          <h2>Проекты</h2>
+          <ul>
+            <li><a href="https://m5production.github.io/shelter/shelter/src/pages/1_index.html">Shelter</a>(проект,
+              сделанный в рамках курса RSSchool JS/FE Stage1 2023Q1)
+            </li>
+            <li><a href="https://github.com/m5production/plants">Plants</a>(проект,
+              сделанный в рамках курса RSSchool JS/FE Stage0 2022Q4)
+            </li>
+            <li><a href="https://github.com/m5production/Online-zoo">Online-zoo</a>(проект,
+              сделанный в рамках курса RSSchool JS/FE Stage1 2022Q3: страницы Main и Donate)
+            </li>
+            <li><a href="https://m5production.github.io/rsschool-cv/">Резюме - задание выполненное в рамках
+                курса RSSchool JS/FE Stage0 2022Q4</a>
+            </li>
+          </ul>
+        </section>
+        <section class="">
+          <h2>Примеры кода</h2>
+          <p>Примеры кода можно найти на сайте <a
+              href="https://www.codewars.com/users/rsschool_d88b7725ff43593a/completed_solutions">Codewars</a>
+          </p>
+        </section>
+        <section class="">
+          <h2>О себе</h2>
+          <p>Стремлюсь стать программистом, чтобы сделать жизнь людей безопаснее,
+            комфортнее, радостнее. Хочу работать в дружном коллективе, в окружении людей, любящих то, чем они
+            занимаются.
+          <p>Люблю решать новые задачи, осваивать новые технологии и навыки. Так, в разные периоды своей жизни я
+            занимался Arduino, знакомился с C++, C#.</p>
+          <p>В настоящий момент я делаю учебные проекты на JavaScript, продолжая его изучать, также я учу сейчас
+            TypeScript и React, равно как
+            и смежные технологии, чтобы как можно скорее попробовать себя в коммерческой разработке.</p>
+        </section>
+        <section class="">
+          <h2>Опыт работы</h2>
+          <ul>
+            <li>2017г.- 2022г. <p>Начальник группы перевода ФГУП&nbsp;"РФЯЦ-ВНИИТФ"</p>
+            </li>
+            <li>2012г.- 2017г. <p>Переводчик ФГУП&nbsp;"РФЯЦ-ВНИИТФ"</p>
+            </li>
+            <li>2011г.- 2012г. <p>Промышленный альпинист ООО"Макфа"</p>
+            </li>
+          </ul>
+        </section>
+        <section class="">
+          <h2>Служба в армии</h2>
+          <p>2010-2011гг. - БПК "Керч"</p>
+          <p>Радиотелеграфист ЗАС</p>
+        </section>
+        <section class="">
+          <h2>Увлечения</h2>
+          <ul>
+            <li>Бег</li>
+            <li>Игра на гитаре</li>
+            <li>Скалолазание</li>
+            <li>Походы</li>
+          </ul>
+        </section>
       </div>
     </div>
   </div>
