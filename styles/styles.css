@@ -46,6 +46,9 @@ a {
 .accordion-button {
   background-color: #0d6efd;
 }
+.accordion-button::after {
+  background-image: url("../assets/images/arrow-down.svg");
+}
 
 .accordion-item {
   border: none;
